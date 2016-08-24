@@ -34,7 +34,7 @@ namespace TwitterApp
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("<html><body>");
+                await context.Response.WriteAsync("<html><body style='background:url(https://github.com/shraddhaagrawal/scratch/blob/master/acs/TwitterApp/FlagBackground.jpg?raw=true)no-repeat;'>");
                 IEnumerable<string> twittsClinton = twitter.GetTwitts("Hilary","Clinton",5).Result;
                 IEnumerable<string> twittsTrump = twitter.GetTwitts("Donald", "trump", 5).Result;
                 await context.Response.WriteAsync("<h1 style='color:blue;'>Recent 5 tweets mentioned Hillary clinton</h1>");
