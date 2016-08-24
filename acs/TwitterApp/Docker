@@ -1,4 +1,4 @@
-FROM Microsoft/dotnet:windowsservercore 
+FROM microsoft/dotnet:windowsservercore 
 COPY . /app
 WORKDIR /app
  
